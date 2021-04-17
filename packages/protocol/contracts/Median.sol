@@ -18,8 +18,9 @@ contract Median {
   (
     uint256[] memory arr
   )
-    external
-    pure
+    public
+    virtual
+    view
     returns (uint256 median)
   {
     bool isOddLength = arr.length % 2 == 1; 
